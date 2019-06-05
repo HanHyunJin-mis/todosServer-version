@@ -8,7 +8,6 @@ const $activeTodos = document.querySelector('.active-todos');
 
 // 리스트 추가하기
 let todos = [];
-
 let navId = 'all';
 
 // completed clear
@@ -105,7 +104,6 @@ $todos.onclick = function (e) {
 
 // checked 시 checked
 $todos.onchange = function (e) {
-  console.log(!e.target.completed);
   patchOneTodo(+e.target.parentNode.id, { completed: e.target.checked });
 };
 
